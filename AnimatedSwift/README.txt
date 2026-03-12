@@ -2,7 +2,7 @@
 AnimatedSwift – Swift (SpriteKit)
 ====================================================
 
-Autor: :contentReference[oaicite:0]{index=0}  
+Autor: Emiliano Cepeda
 Creado: 29/11/24  
 Plataforma: iOS  
 Lenguaje: Swift (SpriteKit)  
