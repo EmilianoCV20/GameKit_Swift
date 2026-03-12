@@ -10,7 +10,11 @@ Lenguaje: Swift (SpriteKit)
 ----------------------------------------------------
 1. Overview
 ----------------------------------------------------
-AnimatedSwift es un proyecto de juego/demo para iOS construido con SpriteKit cuyo objetivo es practicar animaciones de sprites, manejo de atlas de texturas, interacción por toque y movimientos automáticos mediante temporizadores. La escena incluye múltiples nodos tipo `SKSpriteNode` (pokémon en este ejemplo) que están animados a partir de `SKTextureAtlas`, se mueven hacia puntos tocados por el usuario y realizan movimientos aleatorios cuando hay inactividad.
+AnimatedSwift es un proyecto de juego/demo para iOS construido con SpriteKit cuyo objetivo es practicar
+animaciones de sprites, manejo de atlas de texturas, interacción por toque y movimientos automáticos mediante 
+temporizadores. La escena incluye múltiples nodos tipo `SKSpriteNode` (pokémon en este ejemplo) que están 
+animados a partir de `SKTextureAtlas`, se mueven hacia puntos tocados por el usuario y realizan movimientos 
+aleatorios cuando hay inactividad.
 
 Características principales:
 - Carga y animación de sprites desde `SKTextureAtlas`.  
@@ -55,23 +59,29 @@ Características principales:
 ----------------------------------------------------
 3. Funcionalidad Clave
 ----------------------------------------------------
-• Animaciones por frame: cada personaje usa un `SKTextureAtlas` que contiene las frames de su animación; éstas se reproducen indefinidamente.  
-• Movimiento físico suave: la duración del movimiento se calcula a partir de la distancia y una velocidad relativa al ancho del marco, resultando en movimientos coherentes independientemente del tamaño de pantalla.  
-• Respuesta al usuario: al tocar la escena, se selecciona un sprite al azar y se le ordena moverse hacia la posición tocada.  
-• Movimiento autónomo: cuando el usuario no interactúa, un temporizador mueve sprites a posiciones aleatorias para dar sensación de vida en la escena.  
+• Animaciones por frame: cada personaje usa un `SKTextureAtlas` que contiene las frames de su animación; 
+éstas se reproducen indefinidamente.  
+• Movimiento físico suave: la duración del movimiento se calcula a partir de la distancia y una velocidad 
+relativa al ancho del marco, resultando en movimientos coherentes independientemente del tamaño de pantalla.  
+• Respuesta al usuario: al tocar la escena, se selecciona un sprite al azar y se le ordena moverse hacia la 
+posición tocada.  
+• Movimiento autónomo: cuando el usuario no interactúa, un temporizador mueve sprites a posiciones aleatorias 
+para dar sensación de vida en la escena.  
 • Gestión de orientación: el sprite refleja su escala horizontal para mirar hacia la dirección del movimiento.
 
 ----------------------------------------------------
 4. Recursos / Assets necesarios
 ----------------------------------------------------
-- Texture atlases nombrados (ej.: `Hooh.atlas`, `Articuno.atlas`) con las imágenes numeradas de la animación (Hooh1, Hooh2, ...).  
+- Texture atlases nombrados (ej.: `Hooh.atlas`, `Articuno.atlas`) con las imágenes numeradas de la animación 
+(Hooh1, Hooh2, ...).  
 - Opcional: imágenes o assets para fondo, nubes o elementos decorativos.  
 - Configurar en el paquete: asegurarse de que los `.atlas` estén incluidos en el target de la app.
 
 ----------------------------------------------------
 5. Requerimientos
 ----------------------------------------------------
-• iOS 11+ (SpriteKit soporta versiones antiguas, pero se recomienda iOS 13+ para compatibilidad con modernas APIs).  
+• iOS 11+ (SpriteKit soporta versiones antiguas, pero se recomienda iOS 13+ para compatibilidad con modernas 
+APIs).  
 • Xcode 11+ con Swift 5+.  
 • Habilitar recursos de atlas en el proyecto (agregar los folders `.atlas` o assets adecuados).  
 • Para probar en dispositivo: habilitar la ejecución en el equipo de desarrollo y firmar el provisioning.
